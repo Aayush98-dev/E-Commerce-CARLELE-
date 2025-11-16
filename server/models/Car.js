@@ -18,6 +18,6 @@ const carSchema = new mongoose.Schema({
     isAvailable : {type: Boolean, default: true}
 },{timestamps: true})
 
-const Car = mongoose.model('Car', carSchema)
+const Car = mongoose.models.Car || mongoose.model('Car', carSchema)
 
 export default Car

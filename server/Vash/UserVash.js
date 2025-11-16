@@ -3,7 +3,7 @@
 import User from "../models/User.js"
 import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
-import Car from "../models/car.js";
+import Car from "../models/Car.js";
 
 
 // Genetrating JWT token

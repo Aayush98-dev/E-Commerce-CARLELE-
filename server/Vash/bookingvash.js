@@ -1,7 +1,7 @@
  // Funtion to change availability of car for a given date
 
 import Booking from "../models/Booking.js"
-import Car from "../models/car.js";
+import Car from "../models/Car.js";
 
 
 const checkAvailability = async (car, pickupDate, returnDate)=>{
