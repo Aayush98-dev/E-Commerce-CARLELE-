@@ -36,12 +36,12 @@ const Bottom = () => {
 
                 <div className="w-1/2 flex flex-wrap md:flex-nowrap justify-between">
                     <div>
-                        <h2 className="font-semibold text-gray-900 mb-5">RESOURCES</h2>
+                        <h2 className="font-semibold text-gray-900 mb-5">Quick Links</h2>
                         <ul className="text-sm text-gray-500 space-y-2 list-none">
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Browse Cars</a></li>
+                            <li><a href="#">List Your car</a></li>
+                            <li><a href="#">About Us</a></li>
                         </ul>
                     </div>
                     <div>

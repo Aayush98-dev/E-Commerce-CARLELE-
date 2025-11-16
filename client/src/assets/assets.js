@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import lg2 from "./lg2.svg";
+import logo3 from "./logo3.png"
 import gmail_logo from "./gmail_logo.svg";
 import facebook_logo from "./facebook_logo.svg";
 import instagram_logo from "./instagram_logo.svg";
@@ -46,12 +47,14 @@ import car_image6 from "./car_image6.png"
 import car_image7 from "./car_image7.png"
 import car_image8 from "./car_image8.png"
 import car_image9 from "./car_image9.png"
+import video_v from "./video_v.mp4"
 
 
 export const cityList = ['Delhi', 'Lucknow', 'Mumbai', 'Kanpur', 'Pune', 'jaipur', 'Hyderabad', 'Chandigarh']
 
 export const assets = {
     logo,
+    logo3,
     lg2,
     gmail_logo,
     facebook_logo,
@@ -98,7 +101,8 @@ export const assets = {
     car_image6,
     car_image7,
     car_image8,
-    car_image9
+    car_image9,
+    video_v
 }
 
 export const menuLinks = [
@@ -385,12 +389,16 @@ export const dummyDashboardData = {
     "totalBookings": 12,
     "pendingBookings": 6,
     "completedBookings": 6,
-    "recentBookings": [
-        dummyMyBookingsData[8],
-        dummyMyBookingsData[9],
-        dummyMyBookingsData[10],
-        dummyMyBookingsData[11]
-    ],
+    "recentBookings": dummyMyBookingsData.slice(-4),
     "monthlyRevenue": 1580
 };
+
+// export const dummyDashboardData = {
+//   totalCars: 12,
+//   totalBookings: 12,
+//   pendingBookings: 6,
+//   completedBookings: 6,
+//   recentBookings: dummyMyBookingsData.slice(-4),
+//   monthlyRevenue: 1580,
+// };
 
