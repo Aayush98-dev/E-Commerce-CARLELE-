@@ -143,7 +143,7 @@ export const deleteCar = async (req, res) => {
 
         // Chckeing is car belongs to the car
         if (car.owner.toString() !== _id.toString()) {
-            return res.json({ success: false, message: "Unauthorized" })
+            return res.json({ success: false, message: "Car Removed" })
         }
 
         car.owner = null;
@@ -165,7 +165,7 @@ export const getDashData = async (req, res) => {
         const { _id, role } = req.user;
 
         if (role !== 'owner') {
-            return res.json({ success: false, message: "Unauthorized" })
+            return res.json({ success: false, message: "Dash Data Updated" })
         }
 
         const cars = await Car.find({ owner: _id })

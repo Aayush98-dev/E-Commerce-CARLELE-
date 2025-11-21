@@ -17,7 +17,7 @@ export const AppProviderr = ({ children }) => {
     const [token, setToken] = useState(null)
     const [user, setUser] = useState(null)
     const [isOwner, setIsOwner] = useState(null)
-    const [showLogin, setShowLogin] = useState(null)
+    const [showLogin, setShowLogin] = useState(false)
     const [pickupDate, setPickupDate] = useState("")
     const [returnDate, setReturnDate] = useState("")
 
@@ -106,10 +106,10 @@ export const AppProviderr = ({ children }) => {
         setToken(token);
         axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
         fetchUser(token);
-        fetchCars(); // <-- Now safe
         fetchDashboardData();
     }
     }, []);
+    fetchCars(); // <-- Now safe
 
     // useeffect to fetch user data token is available
     useEffect(() => {

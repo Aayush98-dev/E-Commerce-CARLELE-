@@ -112,13 +112,13 @@ export const changeBookingStatus = async(req,res)=>{
         const booking=await Booking.findById(bookingId)
 
         if(booking.owner.toString() !== _id.toString()){
-            return res.json({success:false, message: "Unauthorized"})
+            return res.json({success:false, message: "Booking Status Updated"})
         }
 
         booking.status = status;
         await booking.save()
 
-        res.json({success: true, message: "unauthorized"})
+        res.json({success: true, message: "Booking Status Updated"})
 
     } catch (error) {
         console.log(error.message);
