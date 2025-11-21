@@ -1,16 +1,147 @@
-# React + Vite
+# 🚗 carLelo – Car Rental Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+carLelo is a full-stack car rental platform built using the MERN stack.
+It allows users to browse, book, manage rentals, and view car details, while admins can manage cars and bookings through backend APIs.
 
-Currently, two official plugins are available:
+# 📌 Features
+### 🧑‍💻 User Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Browse available cars
 
-## React Compiler
+View car details
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Book a vehicle
 
-## Expanding the ESLint configuration
+User authentication (Login/Register)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Manage profile and bookings
+
+## 🛠️ Admin Features
+
+Add / Edit / Delete cars
+
+Manage bookings
+
+Secure admin routes
+
+Dashboard (if included)
+
+# 🏗️ Tech Stack
+## Frontend (client/)
+
+React.js
+
+Vite
+
+Axios
+
+Context API / Redux (depending on your project)
+
+Tailwind / CSS (depending on your project)
+
+## Backend (server/)
+
+Node.js
+
+Express.js
+
+MongoDB + Mongoose
+
+JWT Authentication
+
+Bcrypt Password Hashing
+
+# 📁 Project Structure
+```
+carLelo/
+│── client/ 
+    │── src/
+    ├── assets/
+    │
+    ├── components/
+    │   ├── Owner/
+    │   │   ├── NavbarOwner.jsx
+    │   │   ├── Sidebar.jsx
+    │   │   └── Title.jsx
+    │   │
+    │   ├── Bottom.jsx
+    │   ├── CarDekho.jsx
+    │   ├── Dispatch.jsx
+    │   ├── Features.jsx
+    │   ├── Hero.jsx
+    │   ├── Loading.jsx
+    │   ├── Login.jsx
+    │   ├── Navbar.jsx
+    │   ├── Promo.jsx
+    │   ├── Testimonial.jsx
+    │   └── Theme.jsx
+    │
+    ├── Context/
+    │   └── Appcon.jsx
+    │
+    ├── pages/
+    │   ├── Admin/
+    │   ├── Bookings.jsx
+    │   ├── Car.jsx
+    │   ├── CarDetails.jsx
+    │   └── Home.jsx
+    │
+    ├── App.jsx
+    ├── index.css
+    └── main.jsx 
+│── server/
+    │
+    ├── auth/
+    │   ├── auth.js
+    │   └── Multer.js
+    │
+    ├── configs/
+    │   ├── db.js
+    │   └── Imagekit.js
+    │
+    ├── models/
+    │   ├── Booking.js
+    │   ├── Car.js
+    │   └── User.js
+    │
+    ├── rasta/
+    │   ├── bookingRasta.js
+    │   ├── Ownerrasta.js
+    │   └── userRasta.js
+    │
+    ├── Vash/
+    │   ├── bookingvash.js
+    │   ├── Ownervash.js
+    │   └── UserVash.js
+    │
+    ├── node_modules/
+    │
+    └── server.js
+```
+## ⚙️ Installation & Setup
+### 1️⃣ Clone the repository
+```
+git clone <your-repo-link>
+cd carLelo
+```
+### 2️⃣ Setup Frontend
+```
+cd client
+npm install
+npm run dev
+```
+### 3️⃣ Setup Backend
+```
+cd server
+npm install
+npm run start
+```
+
+# 🌐 Live Demo
+🔗 Render Deployment: https://carlelo-my.vercel.app/
+
+🔗 GitHub Repository: https://github.com/Aayush98-dev/E-Commerce-CARLELE-
+
+## 🧾 License
+
+This project is licensed under the MIT License.
